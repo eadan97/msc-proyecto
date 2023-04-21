@@ -1,0 +1,17 @@
+name: msc-proyecto
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - lightfm
+  - scikit-surprise
+  - pytorch
+  - jupyter
+#  - torchvision
+#  - torchaudio
+  - pytorch-cuda=11.7
+  - pip
+  - pip:
+    - recommenders
