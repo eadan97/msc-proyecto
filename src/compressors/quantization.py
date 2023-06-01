@@ -3,7 +3,7 @@ import cornac
 
 
 def get_post_dynamic(model: cornac.models.BiVAECF):
-    model_quatized = torch.ao.quantization.quantize_dynamic(
+    model_quatized = torch.quantization.quantize_dynamic(
         model.bivae,
         {torch.nn.Linear},
         dtype=torch.qint8
